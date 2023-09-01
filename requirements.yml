@@ -1,0 +1,6 @@
+---
+roles:
+  - name: ssh_config
+    src: ssh://git@github.com/ghassen98/awesome-repo.git
+    version: main
+    scm: git
