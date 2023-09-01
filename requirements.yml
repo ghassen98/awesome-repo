@@ -1,6 +1,6 @@
 ---
 roles:
-  - name: ssh_config
+  - name: ansible-github_actions_runner
     src: ssh://git@github.com/ghassen98/awesome-repo.git
     version: main
     scm: git

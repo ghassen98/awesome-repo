@@ -1,6 +1,10 @@
 ---
-- hosts: localhost
-  roles:
-    - ssh_config
+- name: Install GitHub Actions Runner
+  hosts: localhost
+  user: ansible
+  become: yes
   vars:
-    ssh_port: 2202
+    - github_account: ghassen98
+    - github_repo: awesome-repo
+  roles:
+    - role: ansible-github_actions_runner
